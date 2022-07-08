@@ -1,0 +1,26 @@
+class Program {
+    public static void main(String[] args) {
+        System.out.println("**********************************");
+        int pin  = 1234;
+        double accBal = 15000;
+        double widrawAmt =100;
+
+        if (pin == 1234)
+        {
+            if(widrawAmt <= accBal  && widrawAmt > 0 ){
+
+               System.out.println("Widral Ammount is "+widrawAmt);
+                accBal = accBal - widrawAmt;
+                System.out.println("Remaining Balance is "+accBal);
+           
+            }               
+                else {
+                    System.out.println("Insufficent Balance");
+                }
+        }
+        else{
+            System.out.println("Incorrect Pin");
+        }
+        System.out.println("**********************************");
+    }
+}
