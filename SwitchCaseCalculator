@@ -1,0 +1,18 @@
+class Multi{
+    public static void main(String[]args) {
+         
+      int num =30;
+      int nums = 10;
+      String operation="Div";
+      switch(operation){
+        case "Add" : System.out.println("Additional value is = "+num+nums);
+                    break;
+        case "Sub"  : System.out.println("Subtract valuse is = "  +(num-nums));
+                    break;
+        case "Multiple"  : System.out.println("Multiple valuse is = "  +(num*nums));
+                    break;
+        case "Div"  : System.out.println("Divided valuse is = "  +(num/nums));
+                    break;
+                }
+    }
+}
