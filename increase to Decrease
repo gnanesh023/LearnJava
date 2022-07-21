@@ -1,0 +1,21 @@
+class Program {
+    public static void main(String[] args) {
+     int right=1, down=1;
+
+        for(right=1;right<=5;right++){
+
+
+            for(down=1;down<=right;down++){
+
+        System.out.print("* ");
+
+            }
+            System.out.println();
+        }
+
+        for(int r =5; r>=0;r--){
+            for(int d=1; r>=d;d++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
