@@ -3,10 +3,10 @@ class Main {
         String s = "@#$%&*!()ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefijklmnopqrstuvwxyz1234567890";
 
 
-        String pass = "";
+        StringBuilder pass = new StringBuilder();
 
         for (int i = 0; i < 16; i++) {
-            pass += s.charAt(rant(0, s.length()));
+            pass.append(s.charAt(rant(0, s.length())));
 
 
         }
@@ -23,3 +23,4 @@ class Main {
 
     }
 }
+
