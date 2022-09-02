@@ -1,11 +1,14 @@
+import java.util.Random;
+import java.util.Stack;
+
 class Main {
     public static void main(String[] args) {
         String s = "@#$%&*!()ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefijklmnopqrstuvwxyz1234567890";
 
 
         StringBuilder pass = new StringBuilder();
-
-        for (int i = 0; i < 16; i++) {
+        int passLen = rant(8, 16);
+        for (int i = 0; i < passLen; i++) {
             pass.append(s.charAt(rant(0, s.length())));
 
 
@@ -14,13 +17,13 @@ class Main {
 
     }
 
+
     public static int rant(int min, int max) {
+        Random rand = new Random();
 
-        int range = max - min + 1;
 
-        return (int) (Math.random() * range) + 1;
+        return rand.nextInt((max - min) + 1) + min;
 
 
     }
 }
-
